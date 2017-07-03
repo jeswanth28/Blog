@@ -1,0 +1,27 @@
+<div layout="row" class="md-block createpost" flex="100" layout-align="center center">
+<div flex="30" class="md-block" layout="column" layou-align="center center">
+<label class="md-padding">
+Image</label>
+<div flex="100" class="md-block" layout="column" layout-align="center center">
+<div class="md-block" layout-padding>
+<input ng-if="postImage.length == 0" type="file" name="fileInput" onchange="angular.element(this).scope().imageUpload(this)">
+</div>
+</div>
+<div style="padding:20px">
+<img  ng-if="postImage.length != 0" ng-src="{{postImage[0]}}" width="400px" height="300px">
+</div>.
+		<md-input-container  class="md-block" flex="70" layout-padding  >
+				<label>Context </label> 
+				<textarea type="text" rows="3" md-no-asterisk name="userEmail"  ng-model="postDetails.context" ></textarea>
+
+			</md-input-container>
+
+
+	<md-button class="md-primary white" md-no-ink flex="100" ng-click="requestDatabaseAPI()">Create Post</md-button>
+
+	<div layout="row" flex="100" class="alert alert-info text-center"  layout-align="center center" ng-if="message">
+  <strong>{{message}}</strong> 
+</div>
+</div>
+
+</div>

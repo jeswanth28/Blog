@@ -1,0 +1,47 @@
+
+<md-content ng-cloak="">
+<form name="loginUserForm" novalidate>
+<div layout="row" class="logindiv" layout-align="center center" flex="100" >
+<div layout="column" flex="50">
+	<div class="login" flex="50" layout-margin >
+	
+		<div  class="headertext" layout="row" flex="100" layout-align="center center" layout-padding>
+			<span class="md-title">Login</span>
+		</div>
+		<div layout="row" flex="100" layout-align="center center"  class="inputheight" >
+			<md-input-container  class="md-block" flex="70"  >
+				<label>Email </label> 
+				<input type="email"  md-no-asterisk name="userEmail"  ng-model="userDetails.email" 
+				required="">
+				 <div ng-messages="loginUserForm.userEmail.$error">
+          <div ng-message="required">This is required.</div>
+          </div>
+			</md-input-container>
+		</div>
+		<div layout="row" flex="100" layout-align="center center" class="inputheight">
+			<md-input-container class="md-block" flex="70">
+				<label>Password</label> 
+				<input type="password"    md-no-asterisk  
+				name="userPassword" ng-model="userDetails.password" required=""> 
+				<div ng-messages="loginUserForm.userPassword.$error">
+          <div ng-message="required">This is required.</div>
+          </div>
+			</md-input-container>
+		</div>
+		<div layout="row" flex="100" layout-align="center center">
+		<div layout="row" flex="35" layout-align="start center">
+			<md-button  type="submit" flex="100" class="md-raised md-accent" ng-click="requestLoginApi()">Login
+			</md-button>
+		</div>
+		<div layout="row" flex="35" layout-align="start center" >
+	<md-button type="button" flex="100" class="md-raised md-primary md-blue" ng-click="register()">Register
+	</md-button>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</form>
+</md-content>

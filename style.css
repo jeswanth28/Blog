@@ -1,0 +1,48 @@
+.logindiv{
+	width:100%;
+	padding:5% 15%;
+}
+.logindiv .login .headertext{
+	color:black;
+}
+.logindiv .login{
+background-color: #ffffff;
+padding: 10px 0px 40px 0px;
+color: rgba(0,0,0,0.38);
+}
+.logindiv .login .inputheight{
+	height:60px;
+}
+.logindiv .login img{
+	width: 180px;
+	height: 63px;
+}
+.logindiv .login .remember md-checkbox{
+	margin-bottom: 0px;
+}
+.logindiv .login .remember md-checkbox .md-icon{
+	width: 12px;
+	height: 12px;
+}
+.logindiv .login .remember md-checkbox .md-container{
+	height: 12px;
+	width: 12px;
+}
+.logindiv .login .remember 	md-checkbox.md-checked .md-icon:after{
+	width: 6.66667px;
+    height: 10.33333px;
+    left: 2.66667px;
+    top: 0.22222px;
+}
+	.logindiv .login .remember	md-checkbox.md-checked .md-icon{
+		background-color: cyan;
+	}
+	.logindiv .login .remember md-checkbox .md-label{
+		margin-left: 20px;
+	} 
+	.createpost.md-button.md-default-theme:not([disabled]),.createpost .md-button:not([disabled]){
+		background-color: rgb(16,108,200) !important;
+	}
+	.createpost .white{
+		color: #ffffff !important;
+	}

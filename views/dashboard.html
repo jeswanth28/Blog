@@ -1,0 +1,13 @@
+<!--  
+ <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+      <md-nav-item md-nav-href="#/posts" name="page1">Posts</md-nav-item>
+      <md-nav-item md-nav-href="#/createpost" name="page2">Create Posts</md-nav-item>
+    </md-nav-bar> -->
+<div layout="row" flex="100">
+<md-button class="md-raised md-primary" href="#/posts">Posts</md-button>
+<md-button class="md-raised md-primary" href="#/createpost">Create Post</md-button>
+<md-button class="md-raised md-primary" href="#/login" ng-click="signOutFunction()">Sign Out</md-button>
+</div>
+
+    <div ui-view>
+    </div>
